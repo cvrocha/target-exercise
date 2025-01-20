@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Programação</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen p-8">
+    <div class="max-w-4xl mx-auto space-y-8">
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-8">Exercícios de Programação</h1>
+
+        <!-- Exercício 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4">Exercício 1 - Soma Sequencial</h2>
+            <p class="mb-4">Resultado do cálculo onde INDICE = 13:</p>
+            <div id="resultado1" class="text-2xl font-bold text-blue-600"></div>
+        </div>
+
+        <!-- Exercício 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4">Exercício 2 - Sequência de Fibonacci</h2>
+            <div class="mb-4">
+                <input type="number" id="numeroFibonacci" placeholder="Digite um número" 
+                       class="w-full p-2 border rounded">
+            </div>
+            <button onclick="verificarFibonacci()" 
+                    class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                Verificar
+            </button>
+            <div id="resultado2" class="mt-4 text-lg"></div>
+        </div>
+
+        <!-- Exercício 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4">Exercício 3 - Análise de Faturamento</h2>
+            <div id="resultado3" class="space-y-2">
+                <p id="menorFaturamento"></p>
+                <p id="maiorFaturamento"></p>
+                <p id="diasAcimaDaMedia"></p>
+            </div>
+        </div>
+
+        <!-- Exercício 4 -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4">Exercício 4 - Percentual por Estado</h2>
+            <div id="resultado4" class="space-y-2"></div>
+        </div>
+
+        <!-- Exercício 5 -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4">Exercício 5 - Inverter String</h2>
+            <div class="mb-4">
+                <input type="text" id="textoParaInverter" placeholder="Digite um texto" 
+                       class="w-full p-2 border rounded">
+            </div>
+            <button onclick="inverterString()" 
+                    class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                Inverter
+            </button>
+            <div id="resultado5" class="mt-4 text-lg"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
